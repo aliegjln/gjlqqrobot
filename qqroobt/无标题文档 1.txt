@@ -1,0 +1,57 @@
+
+https://web2.qq.com/
+
+Request URL:https://web2.qq.com/
+Request Method:GET
+Status Code:304 Not Modified
+Remote Address:119.147.192.10:443
+Referrer Policy:no-referrer-when-downgrade
+Response Headers
+view source
+Connection:close
+Date:Thu, 05 Apr 2018 06:06:12 GMT
+ETag:"5a6b2e62-998"
+Last-Modified:Fri, 26 Jan 2018 13:34:26 GMT
+Server:tws
+Request Headers
+view source
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.9
+Cache-Control:max-age=0
+Connection:keep-alive
+Cookie:pgv_pvi=5630422016; RK=ggGTmVEaG7; ptcz=443c83fba3042ba7541a1110e0bb227ccf225b27d0a381344b37f637a989cf2a; pt2gguin=o1303393472; pgv_pvid=8690754824; pgv_si=s2191823872; ptisp=ctc
+Host:web2.qq.com
+If-Modified-Since:Fri, 26 Jan 2018 13:34:26 GMT
+Referer:https://web2.qq.com/
+Upgrade-Insecure-Requests:1
+User-Agent:Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Mobile Safari/537.36
+
+
+https://xui.ptlogin2.qq.com/cgi-bin/xlogin?daid=164&target=self&style=40&pt_disable_pwd=1&mibao_css=m_webqq&appid=5010 04106&enable_qlogin=0&no_verifyimg=1&s_url=https%3A%2F%2Fweb2.qq.com%2Fproxy.html&f_url=loginerroralert&strong_login=1&login_state=10&t=20131024001
+
+Request URL:https://xui.ptlogin2.qq.com/cgi-bin/xlogin?daid=164&target=self&style=40&pt_disable_pwd=1&mibao_css=m_webqq&appid=501004106&enable_qlogin=0&no_verifyimg=1&s_url=https%3A%2F%2Fweb2.qq.com%2Fproxy.html&f_url=loginerroralert&strong_login=1&login_state=10&t=20131024001
+Request Method:GET
+Status Code:200 
+Remote Address:101.226.90.177:443
+Referrer Policy:no-referrer-when-downgrade
+Response Headers
+cache-control:max-age=86400
+content-encoding:gzip
+content-length:10371
+content-type:text/html
+date:Thu, 05 Apr 2018 06:00:03 GMT
+last-modified:Thu, 08 Mar 2012 02:04:00 GMT
+p3p:CP="CAO PSA OUR"
+server:QZHTTP-2.38.41
+status:200
+Request Headers
+Provisional headers are shown
+Referer:https://web2.qq.com/
+Upgrade-Insecure-Requests:1
+User-Agent:Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Mobile Safari/537.36
+
+
+
+
+
