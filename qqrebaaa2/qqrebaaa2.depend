@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1523195396 source:/home/gjl/mycode/qqrebaaa2/main.cpp
+	<iostream>
+	<string.h>
+	<stdlib.h>
+	<stdio.h>
+	<unistd.h>
+	<fcntl.h>
+	<errno.h>
+	<netdb.h>
+	<stdarg.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<openssl/bio.h>
+	<openssl/ssl.h>
+	<openssl/err.h>
+	<openssl/rsa.h>
+	<openssl/pem.h>
+	<stdio.h>
+	<string>
+
