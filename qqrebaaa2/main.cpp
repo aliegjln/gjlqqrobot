@@ -210,7 +210,7 @@ int main()
 
     struct hostent *host;
 
-    host=gethostbyname(urlpic.host.c_str());
+    host=gethostbyname(url2.host.c_str());
 
     if(host==0)
     {
@@ -236,7 +236,7 @@ int main()
         cout<<"connect error\n"<<endl;
         exit(1);
     }
-    https(isock,urlpic);
+    https(isock,url2);
     //https(isock,url2);
     //http(isock,url1);
     //http(isock,url2);
