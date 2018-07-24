@@ -1,0 +1,93 @@
+//获得登录前cookie,返回
+*pt_clientip:46dc7c59024cac16
+*pt_guid_sig:2bdbc686e0348b157681bfc1ecdb15587e93abf2f0798efcec284d30a436f817
+*pt_local_token:-1047887349
+*pt_login_sig:GQ5bJ6Ey6nzAhc2LLeTOheh45odJUpUTqSwcrvTvC0k20*XWl6YNkjf2OcecA9Hv
+*pt_serverip:bed30abf06621d5b
+pt_user_id:8622920714843856828
+ptui_identifier:000D14133C8FC08852DB70A0309F2D01125ADE426D0441E05056BD1591
+*uikey:a5e91754722206a747e0b3a1e86fc69354ad9500e585bf6b09b3d578cf7124bb
+
+//获取图片需要cookie
+pgv_pvi=6815115264;
+pgv_si=s4275930112;
+*pt_clientip=aabb7c59024c2d27;
+*pt_guid_sig=2b1c54734e9cef9924f212d5b209c5831527f2822b8aeb7aceeab8f5ec6e8e8d;
+*pt_local_token=-1278068287;
+*pt_login_sig=DEt7QoOfGHZfbtMywNcRmfgn82mFQ*IsT5UVr9OlvWn0xQOQq83WF-MutD6RwYj*;
+*pt_serverip=e0990a3272cb3fff;
+*uikey=057ea50dce94fbc84423713402289d256b99978dc6ed0916b9d390bfeb0980ec;
+
+//获取图片返回
+qrsig:ZYZaW1llmjHZcV*FclSukO9AmeeC7ofp1CsdJw9eCKL6fjUoyzHq-U6zz52qTEsu
+
+//检查登录需要
+pt_login_sig=RbYUIoQ*0NUjq9OS0Cm0gpbfSL8mx79hgnnpk76IAOFh1foAV4WcjPlpmudaTrZo;
+pt_clientip=d5987c59024ca09f;
+pt_serverip=4f7a0abf0e8d8a85;
+pt_local_token=-1459634505;
+uikey=f7f9fa796aa5b48e576b72fddcc128937f30657186784e6a3e72c7f324313ffd;
+pt_guid_sig=0837106c138118b33d291a2f4fd03f6b5ba766592a7f30251865bf1a92b49f0e;
+pgv_pvi=6815115264;
+pgv_si=s4275930112;
+qrsig=gbm8pZ7JyMc0nulEdNBeT3BDEn3x*PMecxSkPQNDuWDlvuglnMhb*Q0cKY7ZfUvJ;//上一个图片的qrsig
+
+//检查登录返回，如果失败(未失效，已失效。。。)，下一次再检查登录用的qrsig换为这个结果
+qrsig AUr5SQFR47ZvD0lGjs6fMyNTxbM31IMd9IDy8dE6rR8Kp8zM7g9225uxouyFhrAX
+
+//检查登录返回，如果成功
+*pt2gguin=o1303393472;
+ETK=;
+*uin=o1303393472;
+*skey=@3o6LNMPKn;
+superuin=o1303393472;
+supertoken=659853423;
+superkey=r4gDldLeG6JBY6RyI*6YxbvapjNSzmomv4cQwyGuJKk_;
+pt_recent_uins=dab1ef76a4b9cef162654f5477c2ab6bbe1337ae646ade063d0a457f4960de24b04c9f2b3294882bcc59c530503ead245b9ba88eee4a4fdb;
+pt_guid_sig=4c9424ac357fad21906a85c1213520a90de89881f07c492149ddc3290efee838;
+*ptisp=cnc;
+*RK=PpDRmVEAQ7;
+ptnick_1303393472=e6849ae8a0a2e79a84e59cb0e79083e4babaefbc81;
+*ptcz=7d0c016e2154493c21258778f821a5b2fbef623f6c70a2d3cfa44e8380958149;
+ptcz=;
+airkey=;	
+
+//最终完成登录，获得登录后需要的的cookis
+pgv_pvi=4454144000; 
+pgv_si=s2631475200;
+*pt2gguin=o1303393472; 
+*uin=o1303393472; 
+*skey=@3o6LNMPKn;
+*ptisp=cnc; 
+*RK=PpDRmVEAQ7; 
+*ptcz=7d0c016e2154493c21258778f821a5b2fbef623f6c70a2d3cfa44e8380958149
+
+//最终登录返回的cookie
+p_skey:kP98culd-6X7bmTUnKJ7ynrPDZs7kV*GjhwCfWVNHUA_
+p_uin:o1303393472
+pt2gguin:o1303393472
+pt4_token:ak3c3tGVcm8npj3Z8dqUUyl119HE0*TM6P53-fKR2YA_
+skey:@jC51eJE2u
+uin:o1303393472
+
+//之后的每一次请求貌似都是这个
+**p_skey	Obuihz*5IepWxy2ISc2eIh7acypUt-KFQPm3-rvnk*c_
+p_uin	o1303393472
+pgv_pvi	4454144000
+pgv_si	s2631475200
+*pt2gguin	o1303393472
+**pt4_token	VIapRlU4LsFIS2ySkcDQZZD1iExtHdD8TV4akBMdOL8_
+*ptcz	7d0c016e2154493c21258778f821a5b2fbef623f6c70a2d3cfa44e8380958149
+*ptisp	cnc
+*RK	PpDRmVEAQ7
+**skey	@3o6LNMPKn
+*uin	o1303393472
+
+
+//////////////////////////////
+
+http://s.web2.qq.com/proxy.html?v=20130916001&callback=1&id=1
+
+
+
+

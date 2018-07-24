@@ -1,0 +1,390 @@
+    944 13.440589463   222.24.32.178         123.151.137.117       HTTP2    383    HEADERS, WINDOW_UPDATE
+
+Frame 944: 383 bytes on wire (3064 bits), 383 bytes captured (3064 bits) on interface 0
+    Interface id: 0 (enp2s0)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jun 27, 2018 23:58:39.399564782 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1530115119.399564782 seconds
+    [Time delta from previous captured frame: 0.057586831 seconds]
+    [Time delta from previous displayed frame: 0.057586831 seconds]
+    [Time since reference or first frame: 13.440589463 seconds]
+    Frame Number: 944
+    Frame Length: 383 bytes (3064 bits)
+    Capture Length: 383 bytes (3064 bits)
+    [Frame is marked: True]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:ssl:http2]
+    [Coloring Rule Name: HTTP]
+    [Coloring Rule String: http || tcp.port == 80 || http2]
+Ethernet II, Src: CompalIn_93:60:60 (fc:45:96:93:60:60), Dst: JuniperN_6d:62:9d (20:4e:71:6d:62:9d)
+    Destination: JuniperN_6d:62:9d (20:4e:71:6d:62:9d)
+        Address: JuniperN_6d:62:9d (20:4e:71:6d:62:9d)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: CompalIn_93:60:60 (fc:45:96:93:60:60)
+        Address: CompalIn_93:60:60 (fc:45:96:93:60:60)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 222.24.32.178, Dst: 123.151.137.117
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 369
+    Identification: 0xaee5 (44773)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (6)
+    Header checksum: 0x86ca [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 222.24.32.178
+    Destination: 123.151.137.117
+    [Source GeoIP: AS4538 China Education and Research Network Center, Xian, 26, 34.258301, 108.928596]
+        [Source GeoIP AS Number: AS4538 China Education and Research Network Center]
+        [Source GeoIP City: Xian, 26]
+        [Source GeoIP Latitude: 34.258301]
+        [Source GeoIP Longitude: 108.928596]
+    [Destination GeoIP: AS17638 ASN for TIANJIN Provincial Net of CT, Tianjin, 28, 39.142200, 117.176697]
+        [Destination GeoIP AS Number: AS17638 ASN for TIANJIN Provincial Net of CT]
+        [Destination GeoIP City: Tianjin, 28]
+        [Destination GeoIP Latitude: 39.142200]
+        [Destination GeoIP Longitude: 117.176697]
+Transmission Control Protocol, Src Port: 59026, Dst Port: 443, Seq: 1988, Ack: 6499, Len: 329
+    Source Port: 59026
+    Destination Port: 443
+    [Stream index: 43]
+    [TCP Segment Len: 329]
+    Sequence number: 1988    (relative sequence number)
+    [Next sequence number: 2317    (relative sequence number)]
+    Acknowledgment number: 6499    (relative ack number)
+    Header Length: 20 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window size value: 393
+    [Calculated window size: 50304]
+    [Window size scaling factor: 128]
+    Checksum: 0xd5fe [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+        [iRTT: 0.022678585 seconds]
+        [Bytes in flight: 329]
+        [Bytes sent since last PSH flag: 329]
+    [PDU Size: 287]
+    [PDU Size: 13]
+Secure Sockets Layer
+    TLSv1.2 Record Layer: Application Data Protocol: http2
+        Content Type: Application Data (23)
+        Version: TLS 1.2 (0x0303)
+        Length: 324
+        Encrypted Application Data: 00000000000000068405083bc85459f2a1d2de6691c814cb...
+HyperText Transfer Protocol 2
+    Stream: HEADERS, Stream ID: 21, Length 278
+        Length: 278
+        Type: HEADERS (1)
+        Flags: 0x25
+            .... ...1 = End Stream: True
+            .... .1.. = End Headers: True
+            .... 0... = Padded: False
+            ..1. .... = Priority: True
+            00.0 ..0. = Unused: 0x00
+        0... .... .... .... .... .... .... .... = Reserved: 0x0
+        .000 0000 0000 0000 0000 0000 0001 0101 = Stream Identifier: 21
+        [Pad Length: 0]
+        0... .... .... .... .... .... .... .... = Exclusive: False
+        .000 0000 0000 0000 0000 0000 0000 0101 = Stream Dependency: 5
+        Weight: 20
+        [Weight real: 21]
+        Header Block Fragment: 8205ff5f62b4f6b283cc6abfcb4304e94d6ab30aa2c2a8b0...
+        [Header Length: 1427]
+        [Header Count: 18]
+        Header: :method: GET
+            Name Length: 7
+            Name: :method
+            Value Length: 3
+            Value: GET
+            Representation: Indexed Header Field
+            Index: 2
+        Header: :path: /ptqrlogin?u1=http%3A%2F%2Fweb2.qq.com%2Fproxy.html&ptqrtoken=1785031793&ptredirect=0&h=1&t=1&g=1&from_ui=1&ptlang=2052&action=0-0-1530115119395&js_ver=10275&js_type=1&login_sig=vd7a6J7hP4iP0-vQ4gAMfddJ13PkFZML0whCDr4gpvaCfN
+            Name Length: 5
+            Name: :path
+            Value Length: 298
+            Value [truncated]: /ptqrlogin?u1=http%3A%2F%2Fweb2.qq.com%2Fproxy.html&ptqrtoken=1785031793&ptredirect=0&h=1&t=1&g=1&from_ui=1&ptlang=2052&action=0-0-1530115119395&js_ver=10275&js_type=1&login_sig=vd7a6J7hP4iP0-vQ4gAMfddJ13PkFZML0whCDr4gpv
+            Representation: Literal Header Field without Indexing - Indexed Name
+            Index: 5
+        Header: :authority: ssl.ptlogin2.qq.com
+            Name Length: 10
+            Name: :authority
+            Value Length: 19
+            Value: ssl.ptlogin2.qq.com
+            Representation: Indexed Header Field
+            Index: 74
+        Header: :scheme: https
+            Name Length: 7
+            Name: :scheme
+            Value Length: 5
+            Value: https
+            Representation: Indexed Header Field
+            Index: 7
+        Header: user-agent: Mozilla/5.0 (X11; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0
+            Name Length: 10
+            Name: user-agent
+            Value Length: 68
+            Value: Mozilla/5.0 (X11; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0
+            Representation: Indexed Header Field
+            Index: 73
+        Header: accept: */*
+            Name Length: 6
+            Name: accept
+            Value Length: 3
+            Value: */*
+            Representation: Indexed Header Field
+            Index: 72
+        Header: accept-language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+            Name Length: 15
+            Name: accept-language
+            Value Length: 59
+            Value: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+            Representation: Indexed Header Field
+            Index: 71
+        Header: accept-encoding: gzip, deflate, br
+            Name Length: 15
+            Name: accept-encoding
+            Value Length: 17
+            Value: gzip, deflate, br
+            Representation: Indexed Header Field
+            Index: 70
+        Header: referer: https://xui.ptlogin2.qq.com/cgi-bin/xlogin?daid=164&target=self&style=40&pt_disable_pwd=1&mibao_css=m_webqq&appid=501004106&enable_qlogin=0&no_verifyimg=1&s_url=http%3A%2F%2Fweb2.qq.com%2Fproxy.html&f_url=loginerroralert&s
+            Name Length: 7
+            Name: referer
+            Value Length: 264
+            Value [truncated]: https://xui.ptlogin2.qq.com/cgi-bin/xlogin?daid=164&target=self&style=40&pt_disable_pwd=1&mibao_css=m_webqq&appid=501004106&enable_qlogin=0&no_verifyimg=1&s_url=http%3A%2F%2Fweb2.qq.com%2Fproxy.html&f_url=loginerroralert
+            Representation: Indexed Header Field
+            Index: 69
+        Header: cookie: pt_login_sig=vd7a6J7hP4iP0-vQ4gAMfddJ13PkFZML0whCDr4gpvaCfNOfE-dTdSID3U-gFwvt
+            Name Length: 6
+            Name: cookie
+            Value Length: 77
+            Value: pt_login_sig=vd7a6J7hP4iP0-vQ4gAMfddJ13PkFZML0whCDr4gpvaCfNOfE-dTdSID3U-gFwvt
+            Representation: Indexed Header Field
+            Index: 68
+        Header: cookie: pt_clientip=8fea7c59024a5cd9
+            Name Length: 6
+            Name: cookie
+            Value Length: 28
+            Value: pt_clientip=8fea7c59024a5cd9
+            Representation: Indexed Header Field
+            Index: 67
+        Header: cookie: pt_serverip=2af70a3272d1bd66
+            Name Length: 6
+            Name: cookie
+            Value Length: 28
+            Value: pt_serverip=2af70a3272d1bd66
+            Representation: Indexed Header Field
+            Index: 66
+        Header: cookie: pt_local_token=-1563171691
+            Name Length: 6
+            Name: cookie
+            Value Length: 26
+            Value: pt_local_token=-1563171691
+            Representation: Indexed Header Field
+            Index: 65
+        Header: cookie: uikey=9ae78e59ac4ef2cecbf4aba8a88fe81b46799f56a6f8e65966cf4e788113ccdb
+            Name Length: 6
+            Name: cookie
+            Value Length: 70
+            Value: uikey=9ae78e59ac4ef2cecbf4aba8a88fe81b46799f56a6f8e65966cf4e788113ccdb
+            Representation: Indexed Header Field
+            Index: 64
+        Header: cookie: pt_guid_sig=00bc6150578793e1e02d75719b83bf80c3ee09bdc8571ceadeef7c15620f4902
+            Name Length: 6
+            Name: cookie
+            Value Length: 76
+            Value: pt_guid_sig=00bc6150578793e1e02d75719b83bf80c3ee09bdc8571ceadeef7c15620f4902
+            Representation: Indexed Header Field
+            Index: 63
+        Header: cookie: pgv_pvi=2487284736
+            Name Length: 6
+            Name: cookie
+            Value Length: 18
+            Value: pgv_pvi=2487284736
+            Representation: Literal Header Field never Indexed - Indexed Name
+            Index: 68
+        Header: cookie: pgv_si=s7178254336
+            Name Length: 6
+            Name: cookie
+            Value Length: 18
+            Value: pgv_si=s7178254336
+            Representation: Literal Header Field never Indexed - Indexed Name
+            Index: 68
+        Header: cookie: qrsig=2X4cVnSMBIkBhsAGd38rvROVK-gy*Yx-o2SCaQgioD7eUw1hKs4vf3uM*bQOlROz
+            Name Length: 6
+            Name: cookie
+            Value Length: 70
+            Value: qrsig=2X4cVnSMBIkBhsAGd38rvROVK-gy*Yx-o2SCaQgioD7eUw1hKs4vf3uM*bQOlROz
+            Representation: Indexed Header Field
+            Index: 62
+        Padding: <MISSING>
+    Stream: WINDOW_UPDATE, Stream ID: 21, Length 4
+        Length: 4
+        Type: WINDOW_UPDATE (8)
+        Flags: 0x00
+            0000 0000 = Unused: 0x00
+        0... .... .... .... .... .... .... .... = Reserved: 0x0
+        .000 0000 0000 0000 0000 0000 0001 0101 = Stream Identifier: 21
+        0... .... .... .... .... .... .... .... = Reserved: 0x0
+        .000 0000 1011 1110 0000 0000 0000 0000 = Window Size Increment: 12451840
+
+Frame (383 bytes):
+0000  20 4e 71 6d 62 9d fc 45 96 93 60 60 08 00 45 00    Nqmb..E..``..E.
+0010  01 71 ae e5 40 00 40 06 86 ca de 18 20 b2 7b 97   .q..@.@..... .{.
+0020  89 75 e6 92 01 bb 58 44 19 49 71 9a 8e 69 50 18   .u....XD.Iq..iP.
+0030  01 89 d5 fe 00 00 17 03 03 01 44 00 00 00 00 00   ..........D.....
+0040  00 00 06 84 05 08 3b c8 54 59 f2 a1 d2 de 66 91   ......;.TY....f.
+0050  c8 14 cb cb 7c 39 c9 55 0b 75 18 be e9 c5 30 19   ....|9.U.u....0.
+0060  6a 02 cd 76 92 ee 1f dd 89 5f d2 5a 79 93 ff 20   j..v....._.Zy.. 
+0070  9b a2 13 76 15 30 26 d3 2c 13 d3 ac 0e 36 39 16   ...v.0&.,....69.
+0080  71 f8 52 44 bf 95 52 43 e8 72 bb 17 84 89 1b 5f   q.RD..RC.r....._
+0090  10 91 a0 ab 25 34 6c b0 e8 95 01 60 45 78 49 2a   ....%4l....`ExI*
+00a0  44 3e 80 00 7e 19 d9 7b 8c 32 eb e8 de 2c e6 a2   D>..~..{.2...,..
+00b0  f2 a2 d5 30 8d 67 93 68 4c d8 73 84 d6 56 0a 91   ...0.g.hL.s..V..
+00c0  b0 2b d4 6c b9 96 29 9d 94 c8 76 2f f6 14 2e ed   .+.l..)...v/....
+00d0  d4 55 f3 ac c0 96 a4 ec e7 b3 68 a3 0e 94 ed 0b   .U........h.....
+00e0  45 8f 65 3f 8a 00 e6 d1 07 99 5d 53 c9 28 7a 78   E.e?......]S.(zx
+00f0  cf f3 6f 17 e8 9d 15 d9 ca 36 a8 c3 0e 02 fc 26   ..o......6.....&
+0100  7b ea 7b 0a e8 e6 34 78 3d 5f a7 9d 65 c9 b8 ba   {.{...4x=_..e...
+0110  b4 2e 70 4d 16 ed 89 39 c3 87 23 4a 26 73 7b 5b   ..pM...9..#J&s{[
+0120  a1 13 2e 92 05 08 86 85 3f 42 d0 d5 30 ee 8d 02   ........?B..0...
+0130  ef 8d 2f 2a cb b7 07 dc 42 47 7d a3 d8 fe 8d fc   ../*....BG}.....
+0140  92 2d 2b d0 ce 02 7d 06 34 03 2f a1 91 22 8e 0c   .-+...}.4./.."..
+0150  fe dd a6 1f 76 cd ff 5e 86 c2 52 05 59 b1 c7 5b   ....v..^..R.Y..[
+0160  28 f9 10 85 58 86 bf e0 06 fd d1 32 5b ee 78 67   (...X......2[.xg
+0170  22 c7 a3 dc 4b e2 f8 a8 3c af ef a1 94 d3 f0      "...K...<......
+Decrypted SSL data (300 bytes):
+0000  00 01 16 01 25 00 00 00 15 00 00 00 05 14 82 05   ....%...........
+0010  ff 5f 62 b4 f6 b2 83 cc 6a bf cb 43 04 e9 4d 6a   ._b.....j..C..Mj
+0020  b3 0a a2 c2 a8 b0 f8 2c 62 5f b7 65 c8 7a 55 16   .......,b_.e.zU.
+0030  1a ec 3f 9f 4b ce 9a 68 f8 ad 3d ac 49 fa 96 a8   ..?.K..h..=.I...
+0040  02 eb cd 81 90 ba fb 3f 15 a6 c2 c8 6b 0a 44 c0   .......?....k.D.
+0050  0f 89 e0 0f c2 60 0f c4 d0 07 e2 5b 0f 4c 56 9a   .....`.....[.LV.
+0060  00 fc 56 9a 07 54 d0 08 0d 8b e0 64 49 8f 54 00   ..V..T.....dI.T.
+0070  58 0b 05 b6 40 10 b6 10 be cb ed fc 74 44 5d cb   X...@.......tD].
+0080  64 01 00 9d 6f e3 a2 22 4f aa cb 00 7e 28 3c c6   d...o.."O...~(<.
+0090  aa 24 1a 68 3b c8 e8 dc ca ec fa da 36 b0 2d df   .$.h;.......6.-.
+00a0  63 53 43 a2 59 24 ca 16 75 f5 c3 fb a3 38 3c 4f   cSC.Y$..u....8<O
+00b0  7a fd 8d 4d 5f 71 de 97 4e a9 70 2d 26 f9 37 64   z..M_q..N.p-&.7d
+00c0  be cf 05 a6 c3 e3 ba 7e 2b 4c 56 99 09 f5 41 60   .......~+LV...A`
+00d0  68 1f 03 34 90 36 00 80 0d 04 0e 7c 48 33 49 00   h..4.6.....|H3I.
+00e0  5c 6b e2 93 46 33 c4 44 22 0a 62 f0 58 fb 76 f8   \k..F3.D".b.X.v.
+00f0  ca 87 c9 c8 c7 c6 c5 c4 c3 c2 c1 c0 bf 1f 35 8e   ..............5.
+0100  ae 6e f1 57 dc d0 09 a7 9d 13 cd 3a cb 9f 1f 35   .n.W.......:...5
+0110  8d ae 6e f1 20 d0 21 d0 ba f0 9b 69 96 5c be 00   ..n. .!....i.\..
+0120  00 04 08 00 00 00 00 15 00 be 00 00               ............
+Decompressed Header (1427 bytes):
+0000  00 00 00 07 3a 6d 65 74 68 6f 64 00 00 00 03 47   ....:method....G
+0010  45 54 00 00 00 05 3a 70 61 74 68 00 00 01 2a 2f   ET....:path...*/
+0020  70 74 71 72 6c 6f 67 69 6e 3f 75 31 3d 68 74 74   ptqrlogin?u1=htt
+0030  70 25 33 41 25 32 46 25 32 46 77 65 62 32 2e 71   p%3A%2F%2Fweb2.q
+0040  71 2e 63 6f 6d 25 32 46 70 72 6f 78 79 2e 68 74   q.com%2Fproxy.ht
+0050  6d 6c 26 70 74 71 72 74 6f 6b 65 6e 3d 31 37 38   ml&ptqrtoken=178
+0060  35 30 33 31 37 39 33 26 70 74 72 65 64 69 72 65   5031793&ptredire
+0070  63 74 3d 30 26 68 3d 31 26 74 3d 31 26 67 3d 31   ct=0&h=1&t=1&g=1
+0080  26 66 72 6f 6d 5f 75 69 3d 31 26 70 74 6c 61 6e   &from_ui=1&ptlan
+0090  67 3d 32 30 35 32 26 61 63 74 69 6f 6e 3d 30 2d   g=2052&action=0-
+00a0  30 2d 31 35 33 30 31 31 35 31 31 39 33 39 35 26   0-1530115119395&
+00b0  6a 73 5f 76 65 72 3d 31 30 32 37 35 26 6a 73 5f   js_ver=10275&js_
+00c0  74 79 70 65 3d 31 26 6c 6f 67 69 6e 5f 73 69 67   type=1&login_sig
+00d0  3d 76 64 37 61 36 4a 37 68 50 34 69 50 30 2d 76   =vd7a6J7hP4iP0-v
+00e0  51 34 67 41 4d 66 64 64 4a 31 33 50 6b 46 5a 4d   Q4gAMfddJ13PkFZM
+00f0  4c 30 77 68 43 44 72 34 67 70 76 61 43 66 4e 4f   L0whCDr4gpvaCfNO
+0100  66 45 2d 64 54 64 53 49 44 33 55 2d 67 46 77 76   fE-dTdSID3U-gFwv
+0110  74 26 70 74 5f 75 69 73 74 79 6c 65 3d 34 30 26   t&pt_uistyle=40&
+0120  61 69 64 3d 35 30 31 30 30 34 31 30 36 26 64 61   aid=501004106&da
+0130  69 64 3d 31 36 34 26 6d 69 62 61 6f 5f 63 73 73   id=164&mibao_css
+0140  3d 6d 5f 77 65 62 71 71 26 00 00 00 0a 3a 61 75   =m_webqq&....:au
+0150  74 68 6f 72 69 74 79 00 00 00 13 73 73 6c 2e 70   thority....ssl.p
+0160  74 6c 6f 67 69 6e 32 2e 71 71 2e 63 6f 6d 00 00   tlogin2.qq.com..
+0170  00 07 3a 73 63 68 65 6d 65 00 00 00 05 68 74 74   ..:scheme....htt
+0180  70 73 00 00 00 0a 75 73 65 72 2d 61 67 65 6e 74   ps....user-agent
+0190  00 00 00 44 4d 6f 7a 69 6c 6c 61 2f 35 2e 30 20   ...DMozilla/5.0 
+01a0  28 58 31 31 3b 20 4c 69 6e 75 78 20 78 38 36 5f   (X11; Linux x86_
+01b0  36 34 3b 20 72 76 3a 35 38 2e 30 29 20 47 65 63   64; rv:58.0) Gec
+01c0  6b 6f 2f 32 30 31 30 30 31 30 31 20 46 69 72 65   ko/20100101 Fire
+01d0  66 6f 78 2f 35 38 2e 30 00 00 00 06 61 63 63 65   fox/58.0....acce
+01e0  70 74 00 00 00 03 2a 2f 2a 00 00 00 0f 61 63 63   pt....*/*....acc
+01f0  65 70 74 2d 6c 61 6e 67 75 61 67 65 00 00 00 3b   ept-language...;
+0200  7a 68 2d 43 4e 2c 7a 68 3b 71 3d 30 2e 38 2c 7a   zh-CN,zh;q=0.8,z
+0210  68 2d 54 57 3b 71 3d 30 2e 37 2c 7a 68 2d 48 4b   h-TW;q=0.7,zh-HK
+0220  3b 71 3d 30 2e 35 2c 65 6e 2d 55 53 3b 71 3d 30   ;q=0.5,en-US;q=0
+0230  2e 33 2c 65 6e 3b 71 3d 30 2e 32 00 00 00 0f 61   .3,en;q=0.2....a
+0240  63 63 65 70 74 2d 65 6e 63 6f 64 69 6e 67 00 00   ccept-encoding..
+0250  00 11 67 7a 69 70 2c 20 64 65 66 6c 61 74 65 2c   ..gzip, deflate,
+0260  20 62 72 00 00 00 07 72 65 66 65 72 65 72 00 00    br....referer..
+0270  01 08 68 74 74 70 73 3a 2f 2f 78 75 69 2e 70 74   ..https://xui.pt
+0280  6c 6f 67 69 6e 32 2e 71 71 2e 63 6f 6d 2f 63 67   login2.qq.com/cg
+0290  69 2d 62 69 6e 2f 78 6c 6f 67 69 6e 3f 64 61 69   i-bin/xlogin?dai
+02a0  64 3d 31 36 34 26 74 61 72 67 65 74 3d 73 65 6c   d=164&target=sel
+02b0  66 26 73 74 79 6c 65 3d 34 30 26 70 74 5f 64 69   f&style=40&pt_di
+02c0  73 61 62 6c 65 5f 70 77 64 3d 31 26 6d 69 62 61   sable_pwd=1&miba
+02d0  6f 5f 63 73 73 3d 6d 5f 77 65 62 71 71 26 61 70   o_css=m_webqq&ap
+02e0  70 69 64 3d 35 30 31 30 30 34 31 30 36 26 65 6e   pid=501004106&en
+02f0  61 62 6c 65 5f 71 6c 6f 67 69 6e 3d 30 26 6e 6f   able_qlogin=0&no
+0300  5f 76 65 72 69 66 79 69 6d 67 3d 31 26 73 5f 75   _verifyimg=1&s_u
+0310  72 6c 3d 68 74 74 70 25 33 41 25 32 46 25 32 46   rl=http%3A%2F%2F
+0320  77 65 62 32 2e 71 71 2e 63 6f 6d 25 32 46 70 72   web2.qq.com%2Fpr
+0330  6f 78 79 2e 68 74 6d 6c 26 66 5f 75 72 6c 3d 6c   oxy.html&f_url=l
+0340  6f 67 69 6e 65 72 72 6f 72 61 6c 65 72 74 26 73   oginerroralert&s
+0350  74 72 6f 6e 67 5f 6c 6f 67 69 6e 3d 31 26 6c 6f   trong_login=1&lo
+0360  67 69 6e 5f 73 74 61 74 65 3d 31 30 26 74 3d 32   gin_state=10&t=2
+0370  30 31 33 31 30 32 34 30 30 31 00 00 00 06 63 6f   0131024001....co
+0380  6f 6b 69 65 00 00 00 4d 70 74 5f 6c 6f 67 69 6e   okie...Mpt_login
+0390  5f 73 69 67 3d 76 64 37 61 36 4a 37 68 50 34 69   _sig=vd7a6J7hP4i
+03a0  50 30 2d 76 51 34 67 41 4d 66 64 64 4a 31 33 50   P0-vQ4gAMfddJ13P
+03b0  6b 46 5a 4d 4c 30 77 68 43 44 72 34 67 70 76 61   kFZML0whCDr4gpva
+03c0  43 66 4e 4f 66 45 2d 64 54 64 53 49 44 33 55 2d   CfNOfE-dTdSID3U-
+03d0  67 46 77 76 74 00 00 00 06 63 6f 6f 6b 69 65 00   gFwvt....cookie.
+03e0  00 00 1c 70 74 5f 63 6c 69 65 6e 74 69 70 3d 38   ...pt_clientip=8
+03f0  66 65 61 37 63 35 39 30 32 34 61 35 63 64 39 00   fea7c59024a5cd9.
+0400  00 00 06 63 6f 6f 6b 69 65 00 00 00 1c 70 74 5f   ...cookie....pt_
+0410  73 65 72 76 65 72 69 70 3d 32 61 66 37 30 61 33   serverip=2af70a3
+0420  32 37 32 64 31 62 64 36 36 00 00 00 06 63 6f 6f   272d1bd66....coo
+0430  6b 69 65 00 00 00 1a 70 74 5f 6c 6f 63 61 6c 5f   kie....pt_local_
+0440  74 6f 6b 65 6e 3d 2d 31 35 36 33 31 37 31 36 39   token=-156317169
+0450  31 00 00 00 06 63 6f 6f 6b 69 65 00 00 00 46 75   1....cookie...Fu
+0460  69 6b 65 79 3d 39 61 65 37 38 65 35 39 61 63 34   ikey=9ae78e59ac4
+0470  65 66 32 63 65 63 62 66 34 61 62 61 38 61 38 38   ef2cecbf4aba8a88
+0480  66 65 38 31 62 34 36 37 39 39 66 35 36 61 36 66   fe81b46799f56a6f
+0490  38 65 36 35 39 36 36 63 66 34 65 37 38 38 31 31   8e65966cf4e78811
+04a0  33 63 63 64 62 00 00 00 06 63 6f 6f 6b 69 65 00   3ccdb....cookie.
+04b0  00 00 4c 70 74 5f 67 75 69 64 5f 73 69 67 3d 30   ..Lpt_guid_sig=0
+04c0  30 62 63 36 31 35 30 35 37 38 37 39 33 65 31 65   0bc6150578793e1e
+04d0  30 32 64 37 35 37 31 39 62 38 33 62 66 38 30 63   02d75719b83bf80c
+04e0  33 65 65 30 39 62 64 63 38 35 37 31 63 65 61 64   3ee09bdc8571cead
+04f0  65 65 66 37 63 31 35 36 32 30 66 34 39 30 32 00   eef7c15620f4902.
+0500  00 00 06 63 6f 6f 6b 69 65 00 00 00 12 70 67 76   ...cookie....pgv
+0510  5f 70 76 69 3d 32 34 38 37 32 38 34 37 33 36 00   _pvi=2487284736.
+0520  00 00 06 63 6f 6f 6b 69 65 00 00 00 12 70 67 76   ...cookie....pgv
+0530  5f 73 69 3d 73 37 31 37 38 32 35 34 33 33 36 00   _si=s7178254336.
+0540  00 00 06 63 6f 6f 6b 69 65 00 00 00 46 71 72 73   ...cookie...Fqrs
+0550  69 67 3d 32 58 34 63 56 6e 53 4d 42 49 6b 42 68   ig=2X4cVnSMBIkBh
+0560  73 41 47 64 33 38 72 76 52 4f 56 4b 2d 67 79 2a   sAGd38rvROVK-gy*
+0570  59 78 2d 6f 32 53 43 61 51 67 69 6f 44 37 65 55   Yx-o2SCaQgioD7eU
+0580  77 31 68 4b 73 34 76 66 33 75 4d 2a 62 51 4f 6c   w1hKs4vf3uM*bQOl
+0590  52 4f 7a                                          ROz
