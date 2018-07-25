@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1532403250 source:/home/gjl/gitaaa/gjlqqrobot/qqrobot4/main.cpp
+1532517785 source:/home/gjl/gitaaa/gjlqqrobot/qqrobot4/main.cpp
 	"other.h"
 	"Request.h"
 	"User.h"
 	"Socket.h"
 	"Wxuser.h"
 
-1532411738 source:/home/gjl/gitaaa/gjlqqrobot/qqrobot4/Request.cpp
+1532498911 source:/home/gjl/gitaaa/gjlqqrobot/qqrobot4/Request.cpp
 	"Request.h"
 	"Socket.h"
 	"Sockettp.h"
@@ -15,22 +15,22 @@
 	"other.h"
 	"Response.h"
 
-1532400415 source:/home/gjl/gitaaa/gjlqqrobot/qqrobot4/User.cpp
+1532517416 source:/home/gjl/gitaaa/gjlqqrobot/qqrobot4/User.cpp
 	"User.h"
 
-1532336644 /home/gjl/gitaaa/gjlqqrobot/qqrobot4/User.h
+1532511601 /home/gjl/gitaaa/gjlqqrobot/qqrobot4/User.h
 	"other.h"
 	"Request.h"
 	"Response.h"
 	"Socket.h"
 
-1530339836 /home/gjl/gitaaa/gjlqqrobot/qqrobot4/Response.h
+1532489063 /home/gjl/gitaaa/gjlqqrobot/qqrobot4/Response.h
 	"other.h"
 
-1531745771 source:/home/gjl/gitaaa/gjlqqrobot/qqrobot4/Response.cpp
+1532498911 source:/home/gjl/gitaaa/gjlqqrobot/qqrobot4/Response.cpp
 	"Response.h"
 
-1531998482 /home/gjl/gitaaa/gjlqqrobot/qqrobot4/other.h
+1532519228 /home/gjl/gitaaa/gjlqqrobot/qqrobot4/other.h
 	<iostream>
 	<limits.h>
 	<initializer_list>
@@ -53,8 +53,10 @@
 	<openssl/err.h>
 	<openssl/rsa.h>
 	<openssl/pem.h>
+	"zlib.h"
+	<assert.h>
 
-1531902103 source:/home/gjl/gitaaa/gjlqqrobot/qqrobot4/Socket.cpp
+1532498584 source:/home/gjl/gitaaa/gjlqqrobot/qqrobot4/Socket.cpp
 	"Socket.h"
 	"other.h"
 
@@ -72,10 +74,13 @@
 	<locale>
 	<vector>
 
-1532403565 source:/home/gjl/gitaaa/gjlqqrobot/qqrobot4/Sockettp.cpp
+1532425129 source:/home/gjl/gitaaa/gjlqqrobot/qqrobot4/Sockettp.cpp
 	"Sockettp.h"
 	"other.h"
 
 1532400987 /home/gjl/gitaaa/gjlqqrobot/qqrobot4/Sockettp.h
 	"other.h"
+
+1532478710 /home/gjl/gitaaa/gjlqqrobot/qqrobot4/zlib.h
+	"zconf.h"
 

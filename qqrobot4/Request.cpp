@@ -31,7 +31,7 @@ const string Request::get_request_head()
     {
         Re+="Cookie: ";
         for(auto i:cookies)
-            Re+=i.first+"="+i.second+";";
+            Re+=i.first+"="+i.second+"; ";
         Re+="\r\n";
     }
     Re+="\r\n";
@@ -77,7 +77,7 @@ const string Request::post_request_head()
     {
         Re+="Cookie: ";
         for(auto i:cookies)
-            Re+=i.first+"="+i.second+";";
+            Re+=i.first+"="+i.second+"; ";
         Re+="\r\n";
     }
     Re+="\r\n";
@@ -94,10 +94,25 @@ Response Request::post(const string &turl,const map<string,string> &thead,const 
         headers[i.first]=i.second;
     for(auto i:tcookie)
         cookies[i.first]=i.second;
-    Socket soc(getdomainname());
-    soc.mysend(post_request_head());
-    Response rep(soc.myrecv());
-    return rep;
+
+    int flag=url.find("https");
+    if(flag>=0)
+    {
+cout<<"this is https >>>>>>>>>>>>>>>>>>>>>>>>>>"<<endl;
+        Socket soc(getdomainname());
+        soc.mysend(post_request_head());
+        Response rep(soc.myrecv());
+        return rep;
+    }
+    else
+    {
+cout<<"this is http >>>>>>>>>>>>>>>>>>>>>>>>>>"<<endl;
+        Sockettp soc(getdomainname());
+        soc.mysend(post_request_head());
+        Response rep(soc.myrecv());
+        return rep;
+    }
+
 }
 Request::~Request()
 {

@@ -4,19 +4,33 @@ Response::Response(pair<string,string> re)
 {
     head=re.first;
     data=re.second;
+    chak();
 }
 Response::~Response()
 {
     //dtor
 }
+
+void Response:: chak()
+{
+    if((int)head.find("Content-Encoding")>=0&&(int)head.find("gzip")>=0)
+    {
+        char out[1000];
+        ungzip(data.c_str(),data.size(),out);
+        data=out;
+    }
+
+}
 string const Response::gethead()
 {
     return head;
 }
+
 string const Response::getdata()
 {
     return data;
 }
+
 map<string,string> Response::get_cookies()
 {
     int lenc=0;

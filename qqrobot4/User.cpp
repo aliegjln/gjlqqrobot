@@ -84,9 +84,8 @@ map<string,string> User::login()
     map<string,string> login_cookie=get_cookie_for_login();
     login_cookie.erase("pt_user_id");
     login_cookie.erase("ptui_identifier");
-    login_cookie["pgv_pvi"]="6815115264";//这两个cookie随便搞一个就行
-    login_cookie["pgv_si"]="s4275930112";
-
+    login_cookie["pgv_pvi"]="5474558976";//这两个cookie随便搞一个就行
+    login_cookie["pgv_si"]="s9296796672";
 
     int n=5;//循环获取chak的次数，最后可以文件配置
     while(n--)
@@ -116,7 +115,6 @@ map<string,string> User::login()
 
             return funk;
         }
-
         //if()//图片过期，重新获取
     }
     exit(1);//获取规定次数后还没扫码就停止；
@@ -141,84 +139,104 @@ string User::getpsessionid(map<string,string> tcooke)
 {
     string url="http://d1.web2.qq.com/channel/login2";
     string tdata="r=%7B%22ptwebqq%22%3A%22%22%2C%22clientid%22%3A53999199%2C%22psessionid%22%3A%22%22%2C%22status%22%3A%22online%22%7D";
-
     map<string ,string > thead;
     thead["Referer"]="http://d.web2.qq.com/proxy.html?v=20151105001&callback=1&id=2";
     thead["Content-Length"]=to_string (tdata.size());
     thead["Content-Type"]="application/x-www-form-urlencoded";
-    thead["Accept-Language"]="zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2";
     thead["Accept-Encoding"]="gzip,deflate";
-    thead["Connection"]="keep-alive";
-cout<<"?????????????????????"<<tdata.size()<<endl;
-
-    map<string,string> cookieee;
-    cookieee["p_skey"]="aFNTT3lY6pjdfysrQAGCJMz5CuDu7JXo*km8MU6Dcuc_";
-    cookieee["p_uin"]="o1303393472";
-    cookieee["pgv_pvi"]="3566537728";
-    cookieee["pgv_si"]="s6472225792";
-    cookieee["pt2gguin"]="o1303393472";
-    cookieee["pt4_token"]="k5e5s3X9iqcaZaF1KdtszpVX59Hu4NBlfEQr9ClWW8s_";
-    cookieee["ptcz"]="6e6ad01e8ddba1a249976e26970b20e5a930489e34e098f1aeb1446240e8ea39";
-    cookieee["ptisp"]="cnc";
-    cookieee["RK"]="fpDRzVEAQ7";
-    cookieee["skey"]="@tcZW3maFj";
-    cookieee["uin"]="o1303393472";
-
-
-
-
 
     Request re;
-    Response rep=re.post(url,thead,cookieee,tdata);
+    Response rep=re.post(url,thead,tcooke,tdata);
     url=rep.getdata();
-cout<<"asdasdasdasdsadasddd---------"<<url<<endl;;
+
+cout<<url<<endl;
+
     int n=url.find("psessionid");
-    n+=12;
-    url=string(url,n,n+url.find("\"}}",n)-n);
+    n+=13;
+    url=string(url,n,url.find("\",\"",n)-n);
 cout<<url<<endl;
     return url;
 }
-int User::somerequest(map<string,string> tcookie)
+map<string,string> User::somerequest(map<string,string> tcookie)
 {
     string vfwebqq=getvfwebqq(tcookie);
-
     string psessionid=getpsessionid(tcookie);
+    map<string,string> ret;
+    ret["vfwebqq"]=vfwebqq;
+    ret["psessionid"]=psessionid;
+    return ret;
+}
+//////////////////一切准备就绪//////////////////////
 
+int User::get_friend(map<string,string>tcookie,map<string,string>tparameter)
+{
+    string qhash=get_hash(atol(qid.c_str()),tparameter["psessionid"]);
+    cout<<qhash<<endl;
 
-//    string fa;
-//    fa+="POST /channel/login2 HTTP/1.1\r\n";
-//    fa+="Host: d1.web2.qq.com\r\n";
-//    fa+="User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0\r\n";
-//    fa+="Accept: */*\r\n";
-//    //fa+="Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2\r\n";
-//    fa+="Accept-Encoding: gzip, deflate\r\n";
-//    fa+="Referer:http://d1.web2.qq.com/proxy.html?v=20151105001&callback=1&id=2\r\n";
-//    fa+="Content-Type: application/x-www-form-urlencoded\r\n";
-//
-//    string aaaa="r={\"ptwebqq\":\"\",\"clientid\":53999199,\"psessionid\":\"\",\"status\":\"online\"}\"";
-//
-//
-//
-//    stringstream fuck;
-//    cout<<aaaa.size()<<endl;;
-//    fuck<<(int )aaaa.size();
-//    fuck>>aaaa;
-//
-//
-//
-//    //fa+="Content-Length: "+aaaa+"\r\n";
-//    fa+="Cookie: ";
-//    for(auto i:tcookie)
-//            fa+=i.first+"="+i.second+"; ";
-//    fa+="\r\n";
-//    fa+="Connection: keep-alive\r\n";
-//    fa+="\r\n";
-//    fa+="r={\"ptwebqq\":\"\",\"clientid\":53999199,\"psessionid\":\"\",\"status\":\"online\"}\"";
-//         //r=%7B%22ptwebqq%22%3A%22%22%2C%22clientid%22%3A53999199%2C%22psessionid%22%3A%22%22%2C%22status%22%3A%22online%22%7D
-//    Socket aa("d1.web2.qq.com");
-//    aa.mysend(fa);
-//    aa.myrecv();
+    Request re;
+    string url="http://s.web2.qq.com/api/get_user_friends2";
+    string data="r=%7B%22vfwebqq%22%3A%22";
+    data+=tparameter["vfwebqq"]+"%22%2C%22hash%22%3A%22";
+    data+=qhash;
+    data+="%22%7D";
+
+    map<string,string> head;
+    head["Referer"]="http://s.web2.qq.com/proxy.htm…v=20130916001&callback=1&id=1";
+    Response rep=re.post(url,head,tcookie,data);
+
+    friends=rep.getdata();
+
+cout<<"this is get friend information>>>>>>>>>>>>>>"<<endl<<friends<<endl;
+
+    return 0;
+}
+int User::get_group_name_list(map<string,string>tcookie,map<string,string>tparameter)
+{
+    string url="http://s.web2.qq.com/api/get_discus_list?clientid=53999199&psessionid=";
+    url+=tparameter["psessionid"];
+    url+="&vfwebqq="+tparameter["vfwebqq"];
+    url+="&t="+get_time();
+
+    map<string,string> head;
+    head["Referer"]="http://s.web2.qq.com/proxy.htm…v=20130916001&callback=1&id=1";
+
+    Request re;
+    Response rep=re.get(url,head,tcookie);
+    group=rep.getdata();
+    return 0;
+}
+
+int User::get_discus_list(map<string,string>tcookie,map<string,string>tparameter)
+{
+    string url="http://s.web2.qq.com/api/get_discus_list?clientid=53999199&psessionid=";
+    url+=tparameter["psessionid"];
+    url+="&vfwebqq="+tparameter["vfwebqq"];
+    url+="&t="+get_time();
+
+    map<string,string> head;
+    head["Referer"]="http://s.web2.qq.com/proxy.htm…v=20130916001&callback=1&id=1";
+
+    Request re;
+    Response rep=re.get(url,head,tcookie);
+    discus=rep.getdata();
+
+    return 0;
+}
+int get_self_info()
+{
+    string url="";
+    return 0;
+}
+
+int User::get_allinfo(map<string,string> tcookie,map<string,string>tparameter)
+{
+    get_friend(tcookie,tparameter);
+    get_group_name_list(tcookie,tparameter);
+    get_discus_list(tcookie,tparameter);
+    //get_self_info();
 
 
     return 0;
 }
+
+

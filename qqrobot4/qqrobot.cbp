@@ -40,6 +40,8 @@
 		<Unit filename="Response.h" />
 		<Unit filename="Socket.cpp" />
 		<Unit filename="Socket.h" />
+		<Unit filename="Sockettp.cpp" />
+		<Unit filename="Sockettp.h" />
 		<Unit filename="User.cpp" />
 		<Unit filename="User.h" />
 		<Unit filename="Wxuser.cpp" />

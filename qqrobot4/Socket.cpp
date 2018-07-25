@@ -69,8 +69,6 @@ pair<string,string> Socket::myrecv()
         lenend=lenend*10+headpass[i]-'0';
 
 cout<<"recv len:"<<lenend<<endl;
-//    lenend--;
-//    lenend--;
     string pageContent;
     if(lenend>0)
     {

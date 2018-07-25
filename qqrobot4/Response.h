@@ -8,6 +8,7 @@ class Response
     string head;
     string data;
     map<string,string> cookies;
+    void chak();
 public:
     Response(pair<string,string>);
     ~Response();
